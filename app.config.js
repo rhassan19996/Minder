@@ -5,6 +5,7 @@ export default {
     name: 'minder',
     slug: 'minder',
     version: '1.0.0',
+    scheme: 'minder', // Add this line - forces auth proxy usage
 
     web: {
       favicon: './assets/favicon.png',
@@ -14,7 +15,7 @@ export default {
       tsconfigPaths: true,
     },
 
-    plugins: [],
+    plugins: ['expo-secure-store', 'expo-web-browser'],
 
     orientation: 'portrait',
     icon: './assets/icon.png',
